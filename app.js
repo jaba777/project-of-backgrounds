@@ -7,6 +7,9 @@ function GetCount(){
     let hexColor=hex[Randomnumber];
   Color.textContent = hexColor;
   Color.style.color=hexColor;
+  if(hexColor==='black'){
+    Color.style.color='white';
+  }
   document.body.style.background = hexColor;
 }
 
