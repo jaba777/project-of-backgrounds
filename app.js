@@ -1,10 +1,10 @@
-const hex = ['red','green','cyan','yellow','black','blue'];
+const array = ['red','green','cyan','yellow','black','blue'];
 const BTN = document.getElementById('btn');
 const Color = document.querySelector('.color');
 
 function GetCount(){
     const Randomnumber=getColor();
-    let hexColor=hex[Randomnumber];
+    let hexColor=array[Randomnumber];
   Color.textContent = hexColor;
   Color.style.color=hexColor;
   if(hexColor==='black'){
@@ -14,7 +14,7 @@ function GetCount(){
 }
 
 function getColor(){
-  return Math.floor(Math.random() * hex.length);
+  return Math.floor(Math.random() * array.length);
 }
 
 BTN.addEventListener('click', GetCount);
